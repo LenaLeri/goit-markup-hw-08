@@ -1,0 +1,33 @@
+.soc {
+  display: flex;
+  justify-content: center;
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.soc__item {
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.soc__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-icons);
+
+  transition: background-color var(--time) var(--timing), color var(--time) var(--timing);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+  }
+}

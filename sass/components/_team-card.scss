@@ -1,0 +1,16 @@
+.card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &__title {
+    margin-bottom: 10px;
+
+    @include font(16px, 500, 1.18, null);
+  }
+  &__text {
+    color: var(--second-text-color);
+
+    @include font(16px, null, 1.18, null);
+
+    margin-bottom: 16px;
+  }
+}

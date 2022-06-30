@@ -1,0 +1,21 @@
+.logo {
+  font-family: var(--font-secondary);
+  @include font(26px, 700, 1.2, null);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo--dark {
+  color: var(--logo-color);
+  &:focus {
+    outline: 1px solid var(--logo-color);
+  }
+}
+.logo--light {
+  color: var(--third-text-color);
+  &:focus {
+    outline: 1px solid var(--background-color);
+  }
+}

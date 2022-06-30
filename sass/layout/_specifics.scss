@@ -1,0 +1,38 @@
+.specifics__list {
+  display: flex;
+  justify-content: space-between;
+}
+.specifics__item {
+  max-width: 270px;
+}
+
+.specifics__item + .specifics__item {
+  margin-left: 30px;
+}
+
+.specifics__text {
+  line-height: 1.7;
+  color: var(--second-text-color);
+}
+.specifics__title {
+  margin-bottom: 10px;
+
+  @include font(14px, 700, 1.14, null);
+
+  text-transform: uppercase;
+}
+
+.specifics__content {
+  display: flex;
+  background-color: var(--btn-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+.specifics__icon {
+  width: 70px;
+  height: 70px;
+}
