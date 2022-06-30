@@ -1,12 +1,15 @@
 .work-card {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  gap: 30px;
   &__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    width: 100%;
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 60px) / 3);
+    }
   }
   &__link {
     display: block;
@@ -26,13 +29,14 @@
   border: 1px solid var(--second-border);
   border-top: none;
   &__title {
-    @include font(16px, 700, 2, 0.06em);
+    @include font(18px, 700, 2, 0.06em);
     color: var(--primary-text-color);
   }
   &__text {
     margin-top: 4px;
 
     color: var(--second-text-color);
+    font-size: 16px;
     line-height: 1.8;
   }
 }
