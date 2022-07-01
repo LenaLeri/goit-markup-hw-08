@@ -360,10 +360,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
-  border-radius: 15px;
   background-color: var(--background-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -379,13 +378,30 @@ body {
   -webkit-transform: translate(-50%, -50%) scale(0, 9);
           transform: translate(-50%, -50%) scale(0, 9);
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: calc(100% - 10px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__title {
+  display: inline-block;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__button {
@@ -514,6 +530,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 20px;
+  color: var(--second-text-color);
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .field-check {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .modal-link {
@@ -538,11 +563,6 @@ body {
 }
 
 .icon-wrap {
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  margin-right: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,6 +572,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
 }
 
 .field-check__input:checked + .icon-wrap {

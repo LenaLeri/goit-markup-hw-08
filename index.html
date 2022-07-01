@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="hero__wrap">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button hero__button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -75,34 +77,46 @@
             <li class="specifics__item">
               <div class="specifics__content">
                 <svg class="specifics__icon" width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-antenna-1" class="specifics-icon"></use>
+                  <use
+                    href="./images/symbol-defs.svg#icon-antenna-1"
+                    class="specifics-icon"
+                  ></use>
                 </svg>
               </div>
               <h3 class="specifics__title">Внимание к деталям</h3>
               <p class="specifics__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
             <li class="specifics__item">
               <div class="specifics__content">
                 <svg class="specifics__icon" width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-clock-1" class="specifics-icon"></use>
+                  <use
+                    href="./images/symbol-defs.svg#icon-clock-1"
+                    class="specifics-icon"
+                  ></use>
                 </svg>
               </div>
               <h3 class="specifics__title">Пунктуальность</h3>
               <p class="specifics__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
             <li class="specifics__item">
               <div class="specifics__content">
                 <svg class="specifics__icon" width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-diagram-1" class="specifics-icon"></use>
+                  <use
+                    href="./images/symbol-defs.svg#icon-diagram-1"
+                    class="specifics-icon"
+                  ></use>
                 </svg>
               </div>
               <h3 class="specifics__title">Планирование</h3>
               <p class="specifics__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
             <li class="specifics__item">
@@ -116,7 +130,8 @@
               </div>
               <h3 class="specifics__title">Современные технологии</h3>
               <p class="specifics__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
@@ -129,13 +144,19 @@
           <h2 class="activity__title">Чем мы занимаемся</h2>
           <ul class="list activity__list">
             <li class="item activity__item">
-              <img src="./images/what-1.jpg" alt="человек печатает на клавиатуре" width="370" />
+              <img
+                srcset="./images/what-1.jpg 1x, ./images/what-1-2x.jpg 2x"
+                src="./images/what-1.jpg"
+                alt="человек печатает на клавиатуре"
+                width="370"
+              />
               <div class="activity__wrap">
                 <p class="activity__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="item activity__item">
               <img
+                srcset="./images/what-2.jpg 1x, ./images/what-2-2x.jpg 2x"
                 src="./images/what-2.jpg"
                 alt="человек с телефоном в руке перед ноутбуком"
                 width="370"
@@ -145,7 +166,12 @@
               </div>
             </li>
             <li class="item activity__item">
-              <img src="./images/what-3.jpg" alt="человек держит в руке планшет" width="370" />
+              <img
+                srcset="./images/what-3.jpg 1x, ./images/what-3-2x.jpg 2x"
+                src="./images/what-3.jpg"
+                alt="человек держит в руке планшет"
+                width="370"
+              />
               <div class="activity__wrap">
                 <p class="activity__text">Дизайнерские решения</p>
               </div>
@@ -160,10 +186,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img srcset="./images/team-1.jpg 1x, 
-              ./images/team-1-2x.jpg 2x"
+              <picture>
+                <source
+                  srcset="./images/team-1.jpg 1x, ./images/team-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-tab.jpg    1x,
+                    ./images/team-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1-mob.jpg    1x,
+                    ./images/team-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-1-mob.jpg"
+                  alt="мужчина с бородой в очках"
+                  width="450"
+                />
+              </picture>
 
-              src="./images/team-1.jpg" alt="мужчина с бородой в очках" width="270" />
               <div class="card">
                 <h3 class="card__title">Игорь Демьяненко</h3>
                 <p lang="en" class="card__text">Product Designer</p>
@@ -171,28 +219,36 @@
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram-2"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -200,7 +256,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-2.jpg" alt="девушка блондинка в очках" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team-2.jpg 1x, ./images/team-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-2-tab.jpg    1x,
+                    ./images/team-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-2-mob.jpg    1x,
+                    ./images/team-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-2-mob.jpg"
+                  alt="девушка блондинка в очках"
+                  width="450"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__title">Ольга Репина</h3>
                 <p lang="en" class="card__text">Frontend Developer</p>
@@ -208,28 +288,36 @@
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram-2"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -237,7 +325,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-3.jpg" alt="мужчина щатен в светлой рубашке" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team-3.jpg 1x, ./images/team-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-tab.jpg    1x,
+                    ./images/team-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-3-mob.jpg    1x,
+                    ./images/team-3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-3-mob.jpg"
+                  alt="мужчина шатен в светлой рубашке"
+                  width="450"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__title">Николай Тарасов</h3>
                 <p lang="en" class="card__text">Marketing</p>
@@ -245,28 +357,36 @@
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram-2"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -274,7 +394,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/team-4.jpg" alt="мужчина с бородой в очках" width="270" />
+              <picture>
+                <source
+                  srcset="./images/team-4.jpg 1x, ./images/team-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-tab.jpg    1x,
+                    ./images/team-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-4-mob.jpg    1x,
+                    ./images/team-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-4-mob.jpg"
+                  alt="мужчина с бородой в очках"
+                  width="450"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__title">Михаил Ермаков</h3>
                 <p lang="en" class="card__text">UI Designer</p>
@@ -282,28 +426,36 @@
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-instagram-2"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-twitter-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-facebook-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
                   <li class="soc__item">
                     <a href="" class="soc__link link">
                       <svg class="soc__icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                        <use
+                          href="./images/symbol-defs.svg#icon-linkedin-1"
+                        ></use>
                       </svg>
                     </a>
                   </li>
@@ -441,7 +593,7 @@
     </footer> -->
 
     <!-- backdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
@@ -468,7 +620,13 @@
           <div class="form-field">
             <label for="user-tel" class="form-field__lable">Телефон</label>
             <div class="form-field__wrap">
-              <input type="tel" name="user-tel" class="form-field__input" id="user-tel" required />
+              <input
+                type="tel"
+                name="user-tel"
+                class="form-field__input"
+                id="user-tel"
+                required
+              />
               <svg class="form-field__icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#icon-phone-black"></use>
               </svg>
@@ -523,7 +681,7 @@
           <button type="submit" class="button button--check">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

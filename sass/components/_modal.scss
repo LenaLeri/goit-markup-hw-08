@@ -8,7 +8,8 @@
   background-color: var(--bgc-backdrop);
 
   opacity: 1;
-  transition: opacity var(--time) var(--timing), visibility var(--time) var(--timing);
+  transition: opacity var(--time) var(--timing),
+    visibility var(--time) var(--timing);
 }
 
 .backdrop.is-hidden {
@@ -21,11 +22,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  height: 609px;
 
   padding: 40px;
-  border-radius: 15px;
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,12 +36,25 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0, 9);
   }
+
+  @media screen and (max-width: 480px) {
+    width: calc(100% - 10px);
+  }
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
   &__title {
+    display: inline-block;
     @include font(20px, 700, 1.15, null);
 
     text-align: center;
     margin-bottom: 12px;
     color: var(--primary-text-color);
+    @include desktop {
+      line-height: 1.15;
+    }
   }
 }
 
@@ -141,6 +154,12 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  color: var(--second-text-color);
+  @include font(12px, null, 1.16, null);
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 .modal-link {
   color: var(--accent-color);
@@ -157,14 +176,15 @@
 }
 
 .icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .field-check__input:checked + .icon-wrap {
