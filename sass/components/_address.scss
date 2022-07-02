@@ -20,12 +20,10 @@
 .address__item {
   color: var(--third-text-color);
   &:not(:first-child) {
-    // margin-top: 9px;
     margin-top: 8px;
   }
   @include desktop {
     &:not(:first-child) {
-      // margin-top: 9px;
       margin-top: 9px;
     }
   }
