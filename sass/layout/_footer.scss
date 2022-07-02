@@ -1,12 +1,20 @@
 .footer {
-  display: flex;
+  // display: flex;
+  text-align: center;
 
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-backgraund-color);
+
   &__wrap {
-    display: flex;
+    // display: flex;
     align-items: baseline;
+    padding: 0 15px;
+
+    // @include tablet {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
   }
   &__text {
     text-transform: uppercase;
@@ -18,12 +26,17 @@
   }
 }
 
-.footer__content + .footer__content {
-  margin-left: 70px;
+.footer__content {
+  margin-bottom: 60px;
 }
+
+// .footer__content + .footer__content {
+//   margin-left: 70px;
+// }
 
 .footer-soc {
   display: flex;
+  justify-content: center;
 }
 
 .footer-soc__item {
