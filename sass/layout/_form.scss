@@ -1,6 +1,6 @@
 .footer-mail {
   display: block;
-  // margin-left: 94px;
+  margin-left: 94px;
   &__title {
     text-transform: uppercase;
     color: var(--background-color);
@@ -12,15 +12,14 @@
 }
 
 .footer-form {
-  // display: flex;
+  display: flex;
   &__icon {
     fill: var(--background-color);
   }
 }
 
 .footer-form__input {
-  // width: 358px;
-  width: 450px;
+  width: 358px;
   height: 50px;
   background-color: transparent;
   color: var(--address-color);
@@ -29,8 +28,6 @@
   border-radius: 4px;
   padding: 16px;
   outline: transparent;
-
-  margin-bottom: 20px;
 
   transition: border-color var(--time) var(--timing);
 

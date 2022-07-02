@@ -1,14 +1,12 @@
 .footer {
-  // display: flex;
-  text-align: center;
+  display: flex;
 
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-backgraund-color);
   &__wrap {
-    max-width: 100%;
-    // display: flex;
-    // align-items: baseline;
+    display: flex;
+    align-items: baseline;
   }
   &__text {
     text-transform: uppercase;
@@ -20,17 +18,12 @@
   }
 }
 
-.footer__content {
-  padding-bottom: 60px;
-}
-
 .footer__content + .footer__content {
-  // margin-left: 70px;
+  margin-left: 70px;
 }
 
 .footer-soc {
   display: flex;
-  justify-content: center;
 }
 
 .footer-soc__item {
