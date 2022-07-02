@@ -1,21 +1,34 @@
 .footer {
-  // display: flex;
   text-align: center;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   background-color: var(--second-backgraund-color);
 
-  &__wrap {
-    // display: flex;
-    align-items: baseline;
-    padding: 0 15px;
-
-    // @include tablet {
-    //   display: flex;
-    //   flex-wrap: wrap;
-    // }
+  @include desktop {
+    text-align: left;
   }
+
+  &__wrap {
+    padding: 0 15px;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline;
+    }
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__content {
+    margin-bottom: 60px;
+
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
+
   &__text {
     text-transform: uppercase;
     color: var(--background-color);
@@ -26,42 +39,42 @@
   }
 }
 
-.footer__content {
-  margin-bottom: 60px;
-}
-
-// .footer__content + .footer__content {
-//   margin-left: 70px;
-// }
-
 .footer-soc {
   display: flex;
   justify-content: center;
-}
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
 
-.footer-soc__item {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--footer-link);
+    align-items: center;
+    justify-content: center;
+    fill: var(--background-color);
 
-  &:last-child {
-    margin-right: 0;
+    transition: background-color var(--time) var(--timing);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }
-
-.footer-soc__link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: var(--footer-link);
-  align-items: center;
-  justify-content: center;
-  fill: var(--background-color);
-
-  transition: background-color var(--time) var(--timing);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+@include tablet {
+  .footer__content--soc {
+    margin-left: 165px;
+  }
+}
+@include desktop {
+  .footer__content--soc {
+    margin-left: 70px;
   }
 }
