@@ -1,6 +1,11 @@
 .logo {
   font-family: var(--font-secondary);
-  @include font(26px, 700, 1.2, null);
+  @include font(24px, 700, 1.16, null);
+
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-accent {
@@ -8,6 +13,8 @@
 }
 
 .logo--dark {
+  padding: 16px 0;
+
   color: var(--logo-color);
   &:focus {
     outline: 1px solid var(--logo-color);

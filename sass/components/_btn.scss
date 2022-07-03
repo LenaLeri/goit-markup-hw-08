@@ -80,3 +80,39 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
+.btn__header {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-left: auto;
+
+  &--open {
+    padding-top: 10px;
+    padding-left: 15px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+.mob-open-icon {
+  fill: var(--logo-color);
+  transition: fill var(--time) var(--timing);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+.mob-close-icon {
+  fill: var(--primary-text-color);
+  transition: fill var(--time) var(--timing);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
