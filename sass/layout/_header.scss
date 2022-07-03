@@ -1,9 +1,20 @@
 .page-header {
   border-bottom: 1px solid var(--border);
 
+  // @include tablet {
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  //   margin: 0;
+  // }
+
   &__wrap {
     margin: 0 auto;
     padding: 0 15px;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
     // display: flex;
     // align-items: center;
   }
@@ -61,9 +72,9 @@
   border-radius: 2px;
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
-}
+// .contacts__item + .contacts__item {
+//   margin-left: 50px;
+// }
 
 .mob-menu {
   position: fixed;
